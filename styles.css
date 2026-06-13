@@ -365,31 +365,37 @@ h3 {
 .pub-four,
 .pub-five,
 .pub-six {
-  --project-image: linear-gradient(rgba(232, 121, 255, 0.18), rgba(18, 10, 35, 0.18)), url("assets/images/hero-purple-digital-twin.png");
+  background-size: cover;
 }
 
 .pub-one {
-  background-position: 72% 42%;
+  --project-image: linear-gradient(rgba(232, 121, 255, 0.08), rgba(18, 10, 35, 0.06)), url("assets/images/publications/meltpoolembedder.jpg");
+  background-position: center;
 }
 
 .pub-two {
-  background-position: 46% 42%;
+  --project-image: linear-gradient(rgba(232, 121, 255, 0.08), rgba(18, 10, 35, 0.06)), url("assets/images/publications/tackle-small-data.png");
+  background-position: center;
 }
 
 .pub-three {
-  background-position: 84% 24%;
+  --project-image: linear-gradient(rgba(232, 121, 255, 0.08), rgba(18, 10, 35, 0.06)), url("assets/images/publications/dt-sensor.png");
+  background-position: center;
 }
 
 .pub-four {
-  background-position: 28% 32%;
+  --project-image: linear-gradient(rgba(232, 121, 255, 0.08), rgba(18, 10, 35, 0.06)), url("assets/images/publications/hob-cnn-v2.png");
+  background-position: center;
 }
 
 .pub-five {
-  background-position: 62% 70%;
+  --project-image: linear-gradient(rgba(232, 121, 255, 0.08), rgba(18, 10, 35, 0.06)), url("assets/images/publications/curved-infill-graphic-abstract.png");
+  background-position: center;
 }
 
 .pub-six {
-  background-position: 80% 72%;
+  --project-image: linear-gradient(rgba(232, 121, 255, 0.08), rgba(18, 10, 35, 0.06)), url("assets/images/publications/semantic-tree.jpg");
+  background-position: center;
 }
 
 .mini-button {
