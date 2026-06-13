@@ -1,16 +1,16 @@
 :root {
-  --ink: #dff7ff;
-  --muted-ink: #91b7c8;
-  --paper: #07162b;
-  --panel: #ffffff;
-  --line: rgba(134, 206, 235, 0.2);
-  --teal: #1fd7e3;
-  --teal-dark: #79f4ff;
-  --coral: #79d7ff;
-  --sun: #ffc857;
-  --blue: #3aa5ff;
-  --charcoal: #06111f;
-  --shadow: 0 18px 60px rgba(3, 14, 31, 0.28);
+  --ink: #f7eeff;
+  --muted-ink: #c9b4d8;
+  --paper: #10091f;
+  --panel: #1b102e;
+  --line: rgba(220, 162, 255, 0.2);
+  --teal: #9b7cff;
+  --teal-dark: #f0c7ff;
+  --coral: #e879ff;
+  --sun: #ffd36e;
+  --blue: #a78bfa;
+  --charcoal: #0b0615;
+  --shadow: 0 18px 60px rgba(5, 2, 12, 0.42);
 }
 
 * {
@@ -24,8 +24,8 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 18% 6%, rgba(31, 215, 227, 0.16), transparent 28rem),
-    radial-gradient(circle at 85% 28%, rgba(58, 165, 255, 0.14), transparent 24rem),
+    radial-gradient(circle at 18% 6%, rgba(168, 85, 247, 0.18), transparent 28rem),
+    radial-gradient(circle at 85% 28%, rgba(232, 121, 255, 0.14), transparent 24rem),
     var(--paper);
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -48,10 +48,10 @@ a {
   justify-content: space-between;
   gap: 24px;
   padding: 18px clamp(20px, 4vw, 64px);
-  background: rgba(6, 17, 31, 0.72);
+  background: rgba(11, 6, 21, 0.78);
   color: #f4fbff;
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(134, 206, 235, 0.16);
+  border-bottom: 1px solid rgba(220, 162, 255, 0.16);
 }
 
 .brand {
@@ -90,15 +90,15 @@ nav a:focus {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: right center;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(4, 13, 28, 0.72) 0%, rgba(4, 13, 28, 0.34) 42%, rgba(4, 13, 28, 0.04) 100%),
-    linear-gradient(0deg, rgba(4, 13, 28, 0.58) 0%, rgba(4, 13, 28, 0) 46%);
+    linear-gradient(90deg, rgba(12, 6, 24, 0.94) 0%, rgba(12, 6, 24, 0.72) 42%, rgba(12, 6, 24, 0.08) 100%),
+    linear-gradient(0deg, rgba(12, 6, 24, 0.72) 0%, rgba(12, 6, 24, 0) 48%);
 }
 
 .hero-content {
@@ -180,9 +180,9 @@ h3 {
 }
 
 .button.primary {
-  background: linear-gradient(135deg, #e9fbff 0%, #9eefff 100%);
+  background: linear-gradient(135deg, #fff2ff 0%, #dca2ff 100%);
   color: var(--charcoal);
-  box-shadow: 0 10px 30px rgba(31, 215, 227, 0.24);
+  box-shadow: 0 10px 30px rgba(232, 121, 255, 0.24);
 }
 
 .button.secondary {
@@ -193,17 +193,17 @@ h3 {
 
 .section {
   padding: 82px clamp(20px, 6vw, 88px);
-  color: #153240;
-  background: #fff8ef;
+  color: var(--ink);
+  background: #120a23;
 }
 
 .section h2,
 .section h3 {
-  color: #153240;
+  color: #fff8ff;
 }
 
 .muted {
-  background: #eef9fb;
+  background: #170d2b;
 }
 
 .two-column {
@@ -231,7 +231,7 @@ h3 {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
-  box-shadow: 0 12px 34px rgba(24, 49, 58, 0.06);
+  box-shadow: 0 12px 34px rgba(5, 2, 12, 0.18);
 }
 
 .stat strong,
@@ -275,7 +275,7 @@ h3 {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
-  box-shadow: 0 12px 36px rgba(24, 49, 58, 0.08);
+  box-shadow: 0 12px 36px rgba(5, 2, 12, 0.22);
 }
 
 .project-media {
@@ -287,32 +287,32 @@ h3 {
 }
 
 .media-one {
-  --project-image: linear-gradient(rgba(21, 167, 167, 0.1), rgba(255, 127, 110, 0.08)), url("assets/images/hero-anime-robotics-lab.png");
+  --project-image: linear-gradient(rgba(232, 121, 255, 0.14), rgba(18, 10, 35, 0.12)), url("assets/images/hero-purple-digital-twin.png");
   background-position: 70% 35%;
 }
 
 .media-two {
-  --project-image: linear-gradient(rgba(255, 200, 87, 0.16), rgba(47, 115, 218, 0.05)), url("assets/images/hero-anime-robotics-lab.png");
+  --project-image: linear-gradient(rgba(220, 162, 255, 0.18), rgba(18, 10, 35, 0.12)), url("assets/images/hero-purple-digital-twin.png");
   background-position: 58% 50%;
 }
 
 .media-three {
-  --project-image: linear-gradient(rgba(21, 167, 167, 0.16), rgba(255, 127, 110, 0.06)), url("assets/images/hero-anime-robotics-lab.png");
+  --project-image: linear-gradient(rgba(167, 139, 250, 0.18), rgba(18, 10, 35, 0.12)), url("assets/images/hero-purple-digital-twin.png");
   background-position: 42% 58%;
 }
 
 .media-four {
-  --project-image: linear-gradient(rgba(255, 200, 87, 0.12), rgba(47, 115, 218, 0.08)), url("assets/images/hero-anime-robotics-lab.png");
+  --project-image: linear-gradient(rgba(232, 121, 255, 0.12), rgba(18, 10, 35, 0.12)), url("assets/images/hero-purple-digital-twin.png");
   background-position: 84% 48%;
 }
 
 .media-five {
-  --project-image: linear-gradient(rgba(21, 167, 167, 0.12), rgba(255, 127, 110, 0.06)), url("assets/images/hero-anime-robotics-lab.png");
+  --project-image: linear-gradient(rgba(220, 162, 255, 0.14), rgba(18, 10, 35, 0.12)), url("assets/images/hero-purple-digital-twin.png");
   background-position: 25% 42%;
 }
 
 .media-six {
-  --project-image: linear-gradient(rgba(255, 200, 87, 0.1), rgba(47, 115, 218, 0.08)), url("assets/images/hero-anime-robotics-lab.png");
+  --project-image: linear-gradient(rgba(167, 139, 250, 0.14), rgba(18, 10, 35, 0.12)), url("assets/images/hero-purple-digital-twin.png");
   background-position: 52% 28%;
 }
 
@@ -345,8 +345,8 @@ h3 {
 
 .contact {
   background:
-    radial-gradient(circle at 16% 20%, rgba(31, 215, 227, 0.28), transparent 24rem),
-    linear-gradient(135deg, rgba(21, 167, 167, 0.16), rgba(58, 165, 255, 0.16)),
+    radial-gradient(circle at 16% 20%, rgba(232, 121, 255, 0.26), transparent 24rem),
+    linear-gradient(135deg, rgba(167, 139, 250, 0.18), rgba(232, 121, 255, 0.12)),
     var(--charcoal);
   color: #fff;
 }
@@ -385,6 +385,35 @@ h3 {
   border: 5px solid rgba(255, 255, 255, 0.86);
   border-radius: 8px;
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+}
+
+.resume-section {
+  background:
+    radial-gradient(circle at 82% 12%, rgba(232, 121, 255, 0.16), transparent 22rem),
+    #10091f;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.resume-panel {
+  padding: 22px;
+  background: rgba(27, 16, 46, 0.88);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.resume-panel p:not(.label) {
+  color: var(--muted-ink);
+}
+
+.resume-download {
+  margin-top: 24px;
 }
 
 .real-photo figcaption {
@@ -436,7 +465,8 @@ footer p {
   }
 
   .stats-grid,
-  .project-grid {
+  .project-grid,
+  .resume-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -479,7 +509,8 @@ footer p {
   }
 
   .stats-grid,
-  .project-grid {
+  .project-grid,
+  .resume-grid {
     grid-template-columns: 1fr;
   }
 
