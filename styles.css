@@ -89,22 +89,18 @@ nav a:focus {
 
 .hero img {
   position: absolute;
-  right: clamp(18px, 6vw, 88px);
-  top: 50%;
-  width: min(48vw, 620px);
-  height: auto;
-  max-height: 74vh;
-  object-fit: contain;
-  object-position: right center;
-  transform: translateY(-50%);
-  filter: drop-shadow(0 28px 70px rgba(220, 162, 255, 0.18));
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(12, 6, 24, 0.9) 0%, rgba(12, 6, 24, 0.62) 42%, rgba(12, 6, 24, 0.02) 100%),
+    linear-gradient(90deg, rgba(12, 6, 24, 0.62) 0%, rgba(12, 6, 24, 0.28) 42%, rgba(12, 6, 24, 0) 100%),
     linear-gradient(0deg, rgba(12, 6, 24, 0.7) 0%, rgba(12, 6, 24, 0) 48%);
 }
 
@@ -564,10 +560,7 @@ footer p {
   }
 
   .hero img {
-    right: -22px;
-    width: min(72vw, 430px);
-    max-height: 48vh;
-    opacity: 0.78;
+    object-position: 60% center;
   }
 
   .hero-overlay {
