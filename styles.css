@@ -316,33 +316,33 @@ h3 {
 }
 
 .media-one {
-  --project-image: linear-gradient(rgba(232, 121, 255, 0.14), rgba(18, 10, 35, 0.12)), url("assets/images/hero-purple-digital-twin.png");
-  background-position: 70% 35%;
+  --project-image: linear-gradient(rgba(232, 121, 255, 0.1), rgba(18, 10, 35, 0.08)), url("assets/images/projects/me-and-ded.jpg");
+  background-position: center;
 }
 
 .media-two {
-  --project-image: linear-gradient(rgba(220, 162, 255, 0.18), rgba(18, 10, 35, 0.12)), url("assets/images/hero-purple-digital-twin.png");
-  background-position: 58% 50%;
+  --project-image: linear-gradient(rgba(220, 162, 255, 0.1), rgba(18, 10, 35, 0.06)), url("assets/images/projects/service-oriented-digital-twin.png");
+  background-position: center;
 }
 
 .media-three {
-  --project-image: linear-gradient(rgba(167, 139, 250, 0.18), rgba(18, 10, 35, 0.12)), url("assets/images/hero-purple-digital-twin.png");
-  background-position: 42% 58%;
+  --project-image: linear-gradient(rgba(167, 139, 250, 0.1), rgba(18, 10, 35, 0.08)), url("assets/images/projects/llm.png");
+  background-position: center;
 }
 
 .media-four {
-  --project-image: linear-gradient(rgba(232, 121, 255, 0.12), rgba(18, 10, 35, 0.12)), url("assets/images/hero-purple-digital-twin.png");
-  background-position: 84% 48%;
+  --project-image: linear-gradient(rgba(232, 121, 255, 0.1), rgba(18, 10, 35, 0.08)), url("assets/images/projects/3d-printing-monitoring.png");
+  background-position: center;
 }
 
 .media-five {
-  --project-image: linear-gradient(rgba(220, 162, 255, 0.14), rgba(18, 10, 35, 0.12)), url("assets/images/hero-purple-digital-twin.png");
-  background-position: 25% 42%;
+  --project-image: linear-gradient(rgba(220, 162, 255, 0.1), rgba(18, 10, 35, 0.08)), url("assets/images/projects/appletree.png");
+  background-position: center;
 }
 
 .media-six {
-  --project-image: linear-gradient(rgba(167, 139, 250, 0.14), rgba(18, 10, 35, 0.12)), url("assets/images/hero-purple-digital-twin.png");
-  background-position: 52% 28%;
+  --project-image: linear-gradient(rgba(167, 139, 250, 0.08), rgba(18, 10, 35, 0.08)), url("assets/images/projects/mentoring-team.jpg");
+  background-position: center;
 }
 
 .project-body,
