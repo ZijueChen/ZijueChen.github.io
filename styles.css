@@ -1,16 +1,16 @@
 :root {
-  --ink: #18313a;
-  --muted-ink: #60727a;
-  --paper: #fff8ef;
+  --ink: #dff7ff;
+  --muted-ink: #91b7c8;
+  --paper: #07162b;
   --panel: #ffffff;
-  --line: #e9dcca;
-  --teal: #15a7a7;
-  --teal-dark: #087878;
-  --coral: #ff7f6e;
+  --line: rgba(134, 206, 235, 0.2);
+  --teal: #1fd7e3;
+  --teal-dark: #79f4ff;
+  --coral: #79d7ff;
   --sun: #ffc857;
-  --blue: #2f73da;
-  --charcoal: #11252e;
-  --shadow: 0 18px 60px rgba(24, 49, 58, 0.12);
+  --blue: #3aa5ff;
+  --charcoal: #06111f;
+  --shadow: 0 18px 60px rgba(3, 14, 31, 0.28);
 }
 
 * {
@@ -23,7 +23,10 @@ html {
 
 body {
   margin: 0;
-  background: var(--paper);
+  background:
+    radial-gradient(circle at 18% 6%, rgba(31, 215, 227, 0.16), transparent 28rem),
+    radial-gradient(circle at 85% 28%, rgba(58, 165, 255, 0.14), transparent 24rem),
+    var(--paper);
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
@@ -45,16 +48,17 @@ a {
   justify-content: space-between;
   gap: 24px;
   padding: 18px clamp(20px, 4vw, 64px);
-  background: rgba(255, 248, 239, 0.86);
-  color: var(--ink);
+  background: rgba(6, 17, 31, 0.72);
+  color: #f4fbff;
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(24, 49, 58, 0.12);
+  border-bottom: 1px solid rgba(134, 206, 235, 0.16);
 }
 
 .brand {
   font-weight: 700;
   letter-spacing: 0;
   white-space: nowrap;
+  color: var(--teal-dark);
 }
 
 nav {
@@ -62,12 +66,12 @@ nav {
   align-items: center;
   gap: clamp(12px, 2vw, 26px);
   font-size: 0.94rem;
-  color: rgba(24, 49, 58, 0.78);
+  color: rgba(244, 251, 255, 0.82);
 }
 
 nav a:hover,
 nav a:focus {
-  color: var(--teal-dark);
+  color: #fff;
 }
 
 .hero {
@@ -93,16 +97,16 @@ nav a:focus {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(255, 248, 239, 0.08) 0%, rgba(255, 248, 239, 0.03) 42%, rgba(17, 37, 46, 0.76) 100%),
-    linear-gradient(0deg, rgba(17, 37, 46, 0.62) 0%, rgba(17, 37, 46, 0.02) 42%);
+    linear-gradient(90deg, rgba(4, 13, 28, 0.72) 0%, rgba(4, 13, 28, 0.34) 42%, rgba(4, 13, 28, 0.04) 100%),
+    linear-gradient(0deg, rgba(4, 13, 28, 0.58) 0%, rgba(4, 13, 28, 0) 46%);
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 650px;
-  margin-left: auto;
-  text-shadow: 0 2px 24px rgba(4, 18, 22, 0.38);
+  max-width: 760px;
+  margin-left: 0;
+  text-shadow: 0 2px 20px rgba(0, 10, 22, 0.54);
 }
 
 .eyebrow,
@@ -125,7 +129,7 @@ p {
 
 h1 {
   margin-bottom: 14px;
-  font-size: clamp(3.3rem, 8vw, 7.4rem);
+  font-size: clamp(3.3rem, 8vw, 7.2rem);
   line-height: 0.95;
   letter-spacing: 0;
 }
@@ -153,7 +157,7 @@ h3 {
 
 .intro {
   max-width: 650px;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(223, 247, 255, 0.86);
   font-size: 1.08rem;
 }
 
@@ -176,9 +180,9 @@ h3 {
 }
 
 .button.primary {
-  background: linear-gradient(135deg, #fff 0%, #ffecc2 100%);
+  background: linear-gradient(135deg, #e9fbff 0%, #9eefff 100%);
   color: var(--charcoal);
-  box-shadow: 0 10px 30px rgba(255, 200, 87, 0.24);
+  box-shadow: 0 10px 30px rgba(31, 215, 227, 0.24);
 }
 
 .button.secondary {
@@ -189,10 +193,17 @@ h3 {
 
 .section {
   padding: 82px clamp(20px, 6vw, 88px);
+  color: #153240;
+  background: #fff8ef;
+}
+
+.section h2,
+.section h3 {
+  color: #153240;
 }
 
 .muted {
-  background: #eefafa;
+  background: #eef9fb;
 }
 
 .two-column {
@@ -334,7 +345,8 @@ h3 {
 
 .contact {
   background:
-    linear-gradient(135deg, rgba(21, 167, 167, 0.22), rgba(255, 200, 87, 0.12)),
+    radial-gradient(circle at 16% 20%, rgba(31, 215, 227, 0.28), transparent 24rem),
+    linear-gradient(135deg, rgba(21, 167, 167, 0.16), rgba(58, 165, 255, 0.16)),
     var(--charcoal);
   color: #fff;
 }
@@ -369,10 +381,17 @@ h3 {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center 38%;
+  object-position: center 42%;
   border: 5px solid rgba(255, 255, 255, 0.86);
   border-radius: 8px;
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+}
+
+.real-photo figcaption {
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
 footer {
@@ -451,8 +470,8 @@ footer p {
 
   .hero-overlay {
     background:
-      linear-gradient(90deg, rgba(17, 37, 46, 0.68) 0%, rgba(17, 37, 46, 0.38) 100%),
-      linear-gradient(0deg, rgba(17, 37, 46, 0.78) 0%, rgba(17, 37, 46, 0.04) 52%);
+      linear-gradient(90deg, rgba(4, 13, 28, 0.8) 0%, rgba(4, 13, 28, 0.36) 100%),
+      linear-gradient(0deg, rgba(4, 13, 28, 0.82) 0%, rgba(4, 13, 28, 0.08) 52%);
   }
 
   .section {
