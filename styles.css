@@ -1,14 +1,16 @@
 :root {
-  --ink: #17211f;
-  --muted-ink: #5d6966;
-  --paper: #f7f8f5;
+  --ink: #18313a;
+  --muted-ink: #60727a;
+  --paper: #fff8ef;
   --panel: #ffffff;
-  --line: #dfe5df;
-  --teal: #0f766e;
-  --teal-dark: #0b4f4a;
-  --amber: #c27a1a;
-  --charcoal: #101716;
-  --shadow: 0 18px 60px rgba(16, 23, 22, 0.12);
+  --line: #e9dcca;
+  --teal: #15a7a7;
+  --teal-dark: #087878;
+  --coral: #ff7f6e;
+  --sun: #ffc857;
+  --blue: #2f73da;
+  --charcoal: #11252e;
+  --shadow: 0 18px 60px rgba(24, 49, 58, 0.12);
 }
 
 * {
@@ -43,10 +45,10 @@ a {
   justify-content: space-between;
   gap: 24px;
   padding: 18px clamp(20px, 4vw, 64px);
-  background: rgba(16, 23, 22, 0.76);
-  color: #fff;
+  background: rgba(255, 248, 239, 0.86);
+  color: var(--ink);
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  border-bottom: 1px solid rgba(24, 49, 58, 0.12);
 }
 
 .brand {
@@ -60,12 +62,12 @@ nav {
   align-items: center;
   gap: clamp(12px, 2vw, 26px);
   font-size: 0.94rem;
-  color: rgba(255, 255, 255, 0.86);
+  color: rgba(24, 49, 58, 0.78);
 }
 
 nav a:hover,
 nav a:focus {
-  color: #fff;
+  color: var(--teal-dark);
 }
 
 .hero {
@@ -91,21 +93,23 @@ nav a:focus {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(7, 12, 12, 0.92) 0%, rgba(7, 12, 12, 0.76) 38%, rgba(7, 12, 12, 0.28) 100%),
-    linear-gradient(0deg, rgba(16, 23, 22, 0.76) 0%, rgba(16, 23, 22, 0) 36%);
+    linear-gradient(90deg, rgba(255, 248, 239, 0.08) 0%, rgba(255, 248, 239, 0.03) 42%, rgba(17, 37, 46, 0.76) 100%),
+    linear-gradient(0deg, rgba(17, 37, 46, 0.62) 0%, rgba(17, 37, 46, 0.02) 42%);
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 760px;
+  max-width: 650px;
+  margin-left: auto;
+  text-shadow: 0 2px 24px rgba(4, 18, 22, 0.38);
 }
 
 .eyebrow,
 .section-kicker,
 .label {
   margin: 0 0 12px;
-  color: var(--amber);
+  color: var(--coral);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0;
@@ -149,7 +153,7 @@ h3 {
 
 .intro {
   max-width: 650px;
-  color: rgba(255, 255, 255, 0.84);
+  color: rgba(255, 255, 255, 0.88);
   font-size: 1.08rem;
 }
 
@@ -172,12 +176,14 @@ h3 {
 }
 
 .button.primary {
-  background: #fff;
+  background: linear-gradient(135deg, #fff 0%, #ffecc2 100%);
   color: var(--charcoal);
+  box-shadow: 0 10px 30px rgba(255, 200, 87, 0.24);
 }
 
 .button.secondary {
-  border: 1px solid rgba(255, 255, 255, 0.54);
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  background: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
 
@@ -186,7 +192,7 @@ h3 {
 }
 
 .muted {
-  background: #edf1ec;
+  background: #eefafa;
 }
 
 .two-column {
@@ -214,6 +220,7 @@ h3 {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
+  box-shadow: 0 12px 34px rgba(24, 49, 58, 0.06);
 }
 
 .stat strong,
@@ -257,7 +264,7 @@ h3 {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
-  box-shadow: 0 10px 34px rgba(16, 23, 22, 0.08);
+  box-shadow: 0 12px 36px rgba(24, 49, 58, 0.08);
 }
 
 .project-media {
@@ -269,32 +276,32 @@ h3 {
 }
 
 .media-one {
-  --project-image: linear-gradient(rgba(15, 118, 110, 0.1), rgba(16, 23, 22, 0.05)), url("assets/images/hero-manufacturing-ai.png");
+  --project-image: linear-gradient(rgba(21, 167, 167, 0.1), rgba(255, 127, 110, 0.08)), url("assets/images/hero-anime-robotics-lab.png");
   background-position: 70% 35%;
 }
 
 .media-two {
-  --project-image: linear-gradient(rgba(194, 122, 26, 0.16), rgba(16, 23, 22, 0.03)), url("assets/images/hero-manufacturing-ai.png");
+  --project-image: linear-gradient(rgba(255, 200, 87, 0.16), rgba(47, 115, 218, 0.05)), url("assets/images/hero-anime-robotics-lab.png");
   background-position: 58% 50%;
 }
 
 .media-three {
-  --project-image: linear-gradient(rgba(15, 118, 110, 0.16), rgba(16, 23, 22, 0.04)), url("assets/images/hero-manufacturing-ai.png");
+  --project-image: linear-gradient(rgba(21, 167, 167, 0.16), rgba(255, 127, 110, 0.06)), url("assets/images/hero-anime-robotics-lab.png");
   background-position: 42% 58%;
 }
 
 .media-four {
-  --project-image: linear-gradient(rgba(194, 122, 26, 0.12), rgba(16, 23, 22, 0.05)), url("assets/images/hero-manufacturing-ai.png");
+  --project-image: linear-gradient(rgba(255, 200, 87, 0.12), rgba(47, 115, 218, 0.08)), url("assets/images/hero-anime-robotics-lab.png");
   background-position: 84% 48%;
 }
 
 .media-five {
-  --project-image: linear-gradient(rgba(15, 118, 110, 0.12), rgba(16, 23, 22, 0.05)), url("assets/images/hero-manufacturing-ai.png");
+  --project-image: linear-gradient(rgba(21, 167, 167, 0.12), rgba(255, 127, 110, 0.06)), url("assets/images/hero-anime-robotics-lab.png");
   background-position: 25% 42%;
 }
 
 .media-six {
-  --project-image: linear-gradient(rgba(194, 122, 26, 0.1), rgba(16, 23, 22, 0.05)), url("assets/images/hero-manufacturing-ai.png");
+  --project-image: linear-gradient(rgba(255, 200, 87, 0.1), rgba(47, 115, 218, 0.08)), url("assets/images/hero-anime-robotics-lab.png");
   background-position: 52% 28%;
 }
 
@@ -326,8 +333,17 @@ h3 {
 }
 
 .contact {
-  background: var(--charcoal);
+  background:
+    linear-gradient(135deg, rgba(21, 167, 167, 0.22), rgba(255, 200, 87, 0.12)),
+    var(--charcoal);
   color: #fff;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 340px);
+  gap: clamp(28px, 5vw, 70px);
+  align-items: center;
 }
 
 .contact h2 {
@@ -342,6 +358,21 @@ h3 {
 .contact a {
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.real-photo {
+  margin: 0;
+}
+
+.real-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 38%;
+  border: 5px solid rgba(255, 255, 255, 0.86);
+  border-radius: 8px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
 }
 
 footer {
@@ -374,6 +405,11 @@ footer p {
     padding-top: 150px;
   }
 
+  .hero-content {
+    margin-left: 0;
+    max-width: 680px;
+  }
+
   .two-column,
   .section-heading {
     grid-template-columns: 1fr;
@@ -383,6 +419,14 @@ footer p {
   .stats-grid,
   .project-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .real-photo {
+    max-width: 360px;
   }
 }
 
@@ -401,10 +445,14 @@ footer p {
     padding: 145px 18px 56px;
   }
 
+  .hero img {
+    object-position: 38% center;
+  }
+
   .hero-overlay {
     background:
-      linear-gradient(90deg, rgba(7, 12, 12, 0.9) 0%, rgba(7, 12, 12, 0.72) 100%),
-      linear-gradient(0deg, rgba(16, 23, 22, 0.72) 0%, rgba(16, 23, 22, 0) 38%);
+      linear-gradient(90deg, rgba(17, 37, 46, 0.68) 0%, rgba(17, 37, 46, 0.38) 100%),
+      linear-gradient(0deg, rgba(17, 37, 46, 0.78) 0%, rgba(17, 37, 46, 0.04) 52%);
   }
 
   .section {
