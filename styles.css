@@ -217,6 +217,28 @@ h3 {
   align-items: start;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.72fr);
+  gap: clamp(30px, 5vw, 70px);
+  align-items: center;
+}
+
+.about-portrait {
+  margin: 0;
+}
+
+.about-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgba(220, 162, 255, 0.32);
+  border-radius: 8px;
+  box-shadow: 0 24px 70px rgba(5, 2, 12, 0.38);
+}
+
 .copy {
   color: var(--muted-ink);
   font-size: 1.04rem;
@@ -442,11 +464,43 @@ h3 {
 }
 
 .education-card {
+  position: relative;
+  overflow: hidden;
   padding: 22px;
   background: rgba(27, 16, 46, 0.88);
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow);
+}
+
+.education-card::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  bottom: 10px;
+  width: 108px;
+  height: 108px;
+  background-image: var(--logo);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  opacity: 0.12;
+  filter: grayscale(1) brightness(1.9) contrast(0.8);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.education-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.logo-monash {
+  --logo: url("assets/images/logo-monash.png");
+}
+
+.logo-csu {
+  --logo: url("assets/images/logo-central-south.png");
 }
 
 .education-card p:not(.label),
@@ -523,9 +577,14 @@ footer p {
   }
 
   .two-column,
+  .about-grid,
   .section-heading {
     grid-template-columns: 1fr;
     display: grid;
+  }
+
+  .about-portrait {
+    max-width: 360px;
   }
 
   .stats-grid,
