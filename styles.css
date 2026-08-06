@@ -1,12 +1,12 @@
 :root {
   --ink: #f7ead0;
   --muted-ink: #604a2c;
-  --paper: #0a1732;
+  --paper: #173f5f;
   --panel: #12283a;
   --panel-warm: #ead7a7;
   --panel-warm-2: #f6e8c5;
-  --line: rgba(249, 214, 128, 0.54);
-  --line-dark: #142542;
+  --line: #e8b84e;
+  --line-dark: #061b36;
   --teal: #5eb8d6;
   --teal-dark: #8edaf0;
   --coral: #f4c95d;
@@ -28,8 +28,8 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 18% 6%, rgba(94, 184, 214, 0.16), transparent 28rem),
-    radial-gradient(circle at 85% 28%, rgba(244, 201, 93, 0.12), transparent 24rem),
+    radial-gradient(circle at 18% 6%, rgba(139, 206, 222, 0.26), transparent 28rem),
+    radial-gradient(circle at 85% 28%, rgba(244, 201, 93, 0.18), transparent 24rem),
     var(--paper);
   color: var(--ink);
   font-family: "Cascadia Mono", Consolas, "Courier New", monospace;
@@ -241,8 +241,8 @@ h3 {
   padding: 82px clamp(20px, 6vw, 88px);
   color: var(--ink);
   background:
-    radial-gradient(circle at 12% 0%, rgba(94, 184, 214, 0.08), transparent 20rem),
-    #0b1831;
+    radial-gradient(circle at 12% 0%, rgba(139, 206, 222, 0.18), transparent 22rem),
+    #1d4d6e;
 }
 
 .section h2,
@@ -252,8 +252,8 @@ h3 {
 
 .muted {
   background:
-    radial-gradient(circle at 90% 0%, rgba(244, 201, 93, 0.08), transparent 20rem),
-    #102238;
+    radial-gradient(circle at 90% 0%, rgba(244, 201, 93, 0.14), transparent 22rem),
+    #244f54;
 }
 
 .two-column {
@@ -312,8 +312,8 @@ h3 {
   padding: 22px;
   background:
     linear-gradient(180deg, rgba(246, 232, 197, 0.98), rgba(226, 199, 139, 0.98));
-  border: 4px solid var(--line-dark);
-  outline: 2px solid #f4c95d;
+  border: 5px solid var(--line-dark);
+  outline: 3px solid var(--line);
   outline-offset: -8px;
   border-radius: 0;
   box-shadow: 6px 6px 0 rgba(3, 8, 22, 0.52);
@@ -361,8 +361,8 @@ h3 {
   overflow: hidden;
   background:
     linear-gradient(180deg, rgba(246, 232, 197, 0.98), rgba(229, 202, 143, 0.98));
-  border: 4px solid var(--line-dark);
-  outline: 2px solid #f4c95d;
+  border: 5px solid var(--line-dark);
+  outline: 3px solid var(--line);
   outline-offset: -8px;
   border-radius: 0;
   box-shadow: 9px 9px 0 rgba(3, 8, 22, 0.58);
@@ -420,6 +420,11 @@ h3 {
 .project-body h3,
 .publication-body h3 {
   color: #17233d;
+}
+
+.project-body .label,
+.publication-body .label {
+  color: #17365c;
 }
 
 .publication-body h3 {
