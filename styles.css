@@ -1,12 +1,12 @@
 :root {
   --ink: #f7ead0;
   --muted-ink: #604a2c;
-  --paper: #173f5f;
+  --paper: #2f6f88;
   --panel: #12283a;
   --panel-warm: #ead7a7;
   --panel-warm-2: #f6e8c5;
   --line: #e8b84e;
-  --line-dark: #061b36;
+  --line-dark: #06152d;
   --teal: #5eb8d6;
   --teal-dark: #8edaf0;
   --coral: #f4c95d;
@@ -242,7 +242,7 @@ h3 {
   color: var(--ink);
   background:
     radial-gradient(circle at 12% 0%, rgba(139, 206, 222, 0.18), transparent 22rem),
-    #1d4d6e;
+    #3f7f95;
 }
 
 .section h2,
@@ -253,7 +253,7 @@ h3 {
 .muted {
   background:
     radial-gradient(circle at 90% 0%, rgba(244, 201, 93, 0.14), transparent 22rem),
-    #244f54;
+    #4f7f72;
 }
 
 .two-column {
@@ -424,7 +424,11 @@ h3 {
 
 .project-body .label,
 .publication-body .label {
-  color: #17365c;
+  display: inline-block;
+  padding: 3px 7px;
+  color: #06152d;
+  background: rgba(6, 21, 45, 0.08);
+  border-left: 4px solid #06152d;
 }
 
 .publication-body h3 {
