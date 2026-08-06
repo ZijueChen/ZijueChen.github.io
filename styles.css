@@ -238,11 +238,51 @@ h3 {
 }
 
 .section {
+  position: relative;
   padding: 82px clamp(20px, 6vw, 88px);
   color: var(--ink);
   background:
     radial-gradient(circle at 12% 0%, rgba(139, 206, 222, 0.18), transparent 22rem),
     #3f7f95;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: clamp(18px, 6vw, 88px);
+  right: clamp(18px, 6vw, 88px);
+  height: 26px;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, transparent 0 12px, #06152d 12px calc(100% - 12px), transparent calc(100% - 12px)),
+    linear-gradient(90deg, transparent 0 18px, #e8b84e 18px calc(100% - 18px), transparent calc(100% - 18px)),
+    repeating-linear-gradient(90deg, rgba(246, 232, 197, 0.94) 0 14px, rgba(226, 199, 139, 0.94) 14px 28px);
+  border-top: 3px solid #06152d;
+  border-bottom: 3px solid #06152d;
+  box-shadow: 0 7px 0 rgba(3, 8, 22, 0.24);
+  clip-path: polygon(0 50%, 16px 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 16px 100%);
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 34px;
+  height: 34px;
+  z-index: 2;
+  transform: translateX(-50%) rotate(45deg);
+  background: #f4c95d;
+  border: 4px solid #06152d;
+  box-shadow:
+    inset 0 0 0 3px rgba(255, 246, 216, 0.38),
+    5px 5px 0 rgba(3, 8, 22, 0.28);
+}
+
+.hero + .section::before,
+.hero + .section::after {
+  display: none;
 }
 
 .section h2,
@@ -715,6 +755,11 @@ footer p {
 
   .section {
     padding: 62px 18px;
+  }
+
+  .section::before {
+    left: 12px;
+    right: 12px;
   }
 
   .stats-grid,
