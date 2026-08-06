@@ -81,15 +81,15 @@ nav a:focus {
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: auto;
   display: grid;
   align-items: center;
   overflow: hidden;
   color: #fff;
-  padding: 94px clamp(14px, 3vw, 42px) 34px;
+  padding: 94px clamp(14px, 3vw, 42px) 54px;
   background:
-    radial-gradient(circle at 50% 44%, rgba(94, 184, 214, 0.16), transparent 36rem),
-    linear-gradient(135deg, #08142c 0%, #102b44 46%, #061022 100%);
+    radial-gradient(circle at 50% 44%, rgba(246, 223, 156, 0.11), transparent 36rem),
+    linear-gradient(180deg, #142334 0%, #2f7188 100%);
 }
 
 .hero-map-frame {
@@ -98,7 +98,7 @@ nav a:focus {
   width: min(100%, 1672px);
   margin: 0 auto;
   background: transparent;
-  box-shadow: 0 26px 80px rgba(3, 8, 22, 0.38);
+  box-shadow: 0 18px 58px rgba(3, 8, 22, 0.26);
 }
 
 .hero-map-frame img {
@@ -249,40 +249,40 @@ h3 {
 .section::before {
   content: "";
   position: absolute;
-  top: -13px;
+  top: -9px;
   left: clamp(18px, 6vw, 88px);
   right: clamp(18px, 6vw, 88px);
-  height: 26px;
+  height: 18px;
   z-index: 1;
   background:
-    linear-gradient(90deg, transparent 0 12px, #06152d 12px calc(100% - 12px), transparent calc(100% - 12px)),
-    linear-gradient(90deg, transparent 0 18px, #e8b84e 18px calc(100% - 18px), transparent calc(100% - 18px)),
-    repeating-linear-gradient(90deg, rgba(246, 232, 197, 0.94) 0 14px, rgba(226, 199, 139, 0.94) 14px 28px);
-  border-top: 3px solid #06152d;
-  border-bottom: 3px solid #06152d;
-  box-shadow: 0 7px 0 rgba(3, 8, 22, 0.24);
-  clip-path: polygon(0 50%, 16px 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 16px 100%);
+    radial-gradient(circle at 50% 50%, rgba(255, 247, 216, 0.9) 0 2px, transparent 3px),
+    repeating-linear-gradient(45deg, transparent 0 15px, rgba(94, 58, 18, 0.18) 15px 17px, transparent 17px 32px),
+    linear-gradient(180deg, #fff0b8 0%, #f2c95c 36%, #b97822 50%, #f6d575 66%, #8c571d 100%);
+  border-top: 2px solid #06152d;
+  border-bottom: 2px solid #06152d;
+  box-shadow:
+    inset 0 2px 0 rgba(255, 250, 222, 0.7),
+    inset 0 -2px 0 rgba(82, 46, 10, 0.32),
+    0 5px 0 rgba(3, 8, 22, 0.2);
+  clip-path: polygon(0 50%, 13px 0, calc(100% - 13px) 0, 100% 50%, calc(100% - 13px) 100%, 13px 100%);
 }
 
 .section::after {
   content: "";
   position: absolute;
-  top: -20px;
+  top: -16px;
   left: 50%;
-  width: 34px;
-  height: 34px;
+  width: 26px;
+  height: 26px;
   z-index: 2;
   transform: translateX(-50%) rotate(45deg);
-  background: #f4c95d;
-  border: 4px solid #06152d;
+  background:
+    radial-gradient(circle at 32% 28%, #fff8d4 0 18%, transparent 19%),
+    linear-gradient(135deg, #fff0b8 0%, #e8b84e 42%, #9d6422 100%);
+  border: 3px solid #06152d;
   box-shadow:
-    inset 0 0 0 3px rgba(255, 246, 216, 0.38),
-    5px 5px 0 rgba(3, 8, 22, 0.28);
-}
-
-.hero + .section::before,
-.hero + .section::after {
-  display: none;
+    inset 0 0 0 2px rgba(255, 246, 216, 0.46),
+    4px 4px 0 rgba(3, 8, 22, 0.24);
 }
 
 .section h2,
@@ -578,8 +578,9 @@ h3 {
 
 .resume-section {
   background:
-    radial-gradient(circle at 82% 12%, rgba(244, 201, 93, 0.12), transparent 22rem),
-    #08142c;
+    radial-gradient(circle at 82% 12%, rgba(246, 223, 156, 0.2), transparent 22rem),
+    radial-gradient(circle at 18% 92%, rgba(139, 206, 222, 0.16), transparent 20rem),
+    #3f7f95;
 }
 
 .education-grid {
