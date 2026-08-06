@@ -255,9 +255,7 @@ h3 {
   height: 12px;
   z-index: 1;
   background:
-    radial-gradient(circle at 10% 50%, #1786d8 0 4px, #06152d 5px 7px, transparent 8px),
-    radial-gradient(circle at 90% 50%, #1786d8 0 4px, #06152d 5px 7px, transparent 8px),
-    repeating-linear-gradient(90deg, transparent 0 42px, rgba(255, 247, 216, 0.72) 42px 45px, transparent 45px 84px),
+    linear-gradient(90deg, transparent 0 14px, rgba(255, 245, 197, 0.5) 14px 16px, transparent 16px calc(100% - 16px), rgba(255, 245, 197, 0.5) calc(100% - 16px) calc(100% - 14px), transparent calc(100% - 14px)),
     linear-gradient(180deg, #fff3c4 0%, #f6d874 24%, #c78326 50%, #ffe18a 75%, #935a1d 100%);
   border-top: 1px solid #06152d;
   border-bottom: 1px solid #06152d;
@@ -271,19 +269,19 @@ h3 {
 .section::after {
   content: "";
   position: absolute;
-  top: -24px;
+  top: -17px;
   left: 50%;
-  width: 52px;
-  height: 52px;
+  width: 30px;
+  height: 30px;
   z-index: 2;
-  transform: translateX(-50%);
+  transform: translateX(-50%) rotate(45deg);
   background:
-    radial-gradient(circle at 34% 30%, rgba(202, 245, 255, 0.95) 0 4px, transparent 5px),
-    radial-gradient(circle at 50% 48%, #33c7ff 0 7px, #1068c4 8px 15px, #063b86 16px 20px, transparent 21px),
-    radial-gradient(circle at 50% 48%, #fff1ae 0 25px, #bd7a24 26px 30px, #06152d 31px 34px, transparent 35px),
-    linear-gradient(45deg, transparent 0 17px, #06152d 17px 19px, #f4cf6a 19px 25px, #06152d 25px 27px, transparent 27px);
+    radial-gradient(circle at 32% 28%, rgba(255, 250, 222, 0.95) 0 3px, transparent 4px),
+    linear-gradient(135deg, #fff3c4 0%, #f6d874 35%, #c78326 56%, #ffe18a 76%, #935a1d 100%);
+  border: 3px solid #06152d;
   box-shadow:
-    0 4px 0 rgba(3, 8, 22, 0.24);
+    inset 0 0 0 2px rgba(255, 250, 222, 0.36),
+    4px 4px 0 rgba(3, 8, 22, 0.22);
   pointer-events: none;
 }
 
