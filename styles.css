@@ -594,26 +594,36 @@ h3 {
 }
 
 .community-section {
+  position: relative;
+  overflow: hidden;
   background:
-    radial-gradient(circle at 18% 18%, rgba(246, 223, 156, 0.18), transparent 24rem),
-    radial-gradient(circle at 82% 74%, rgba(6, 21, 45, 0.18), transparent 26rem),
-    #4d7f67;
+    radial-gradient(circle at 16% 18%, rgba(246, 223, 156, 0.12), transparent 24rem),
+    linear-gradient(180deg, #52836d 0%, #4d7f67 46%, #4a7a63 100%);
 }
 
 .community-ending {
-  max-width: 1480px;
-  margin: 54px auto 0;
-  border: 5px solid var(--line-dark);
-  outline: 3px solid var(--line);
-  outline-offset: -9px;
-  box-shadow: 10px 10px 0 rgba(3, 8, 22, 0.44);
-  background: #4d7f67;
+  position: relative;
+  max-width: 1600px;
+  margin: 44px auto -42px;
+  background: transparent;
+}
+
+.community-ending::before {
+  content: "";
+  position: absolute;
+  inset: -24px -16px auto;
+  height: 92px;
+  pointer-events: none;
+  background: linear-gradient(180deg, #4d7f67 0%, rgba(77, 127, 103, 0.82) 38%, rgba(77, 127, 103, 0) 100%);
+  z-index: 1;
 }
 
 .community-ending img {
+  position: relative;
   display: block;
   width: 100%;
   height: auto;
+  z-index: 0;
 }
 
 .contact-grid {
