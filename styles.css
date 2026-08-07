@@ -593,6 +593,29 @@ h3 {
   color: #fff;
 }
 
+.community-section {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(246, 223, 156, 0.18), transparent 24rem),
+    radial-gradient(circle at 82% 74%, rgba(6, 21, 45, 0.18), transparent 26rem),
+    #4d7f67;
+}
+
+.community-ending {
+  max-width: 1480px;
+  margin: 54px auto 0;
+  border: 5px solid var(--line-dark);
+  outline: 3px solid var(--line);
+  outline-offset: -9px;
+  box-shadow: 10px 10px 0 rgba(3, 8, 22, 0.44);
+  background: #4d7f67;
+}
+
+.community-ending img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(220px, 340px);
